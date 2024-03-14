@@ -20,8 +20,7 @@
 #include <vector>
 #include <set>
 #include <string>
-#include <Eigen/Core>
-#include <Eigen/Array>
+#include <eigen3/Eigen/Core>
 
 using namespace std;
 using namespace Eigen;

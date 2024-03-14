@@ -25,7 +25,7 @@ BUILDTARGET = OMCBoost
 # Build
 all: $(BUILDTARGET)
 $(BUILDTARGET): $(OBJECTS) $(SOURCES) $(HEADERS) $(LIBLARANKDIR)/LaRank.o $(LIBLARANKDIR)/vectors.o 
-	$(CC) $(LINKPATH) $(LDFLAGS) $(OBJECTS) $(LIBLARANKDIR)/LaRank.o $(LIBLARANKDIR)/vectors.o -o $@
+	$(CC) $(LINKPATH) $(OBJECTS) $(LIBLARANKDIR)/LaRank.o $(LIBLARANKDIR)/vectors.o -o $@ $(LDFLAGS)
 
 .cpp.o:
 	$(CC) $(CFLAGS) $(INCLUDEPATH) $< -o $@
